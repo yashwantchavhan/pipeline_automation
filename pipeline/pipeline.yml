@@ -2,7 +2,7 @@ resources:
   - name: test
     type: git
     source:
-      uri: https://github.com/riteshbabu/concourse-demo.git
+      uri: https://github.com/yashwantchavhan/test.git
       branch: master
 
 jobs:
