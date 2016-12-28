@@ -1,5 +1,5 @@
 resources:
-  - name: sources
+  - name: test
     type: git
     source:
       uri: https://github.com/riteshbabu/concourse-demo.git
@@ -8,9 +8,9 @@ resources:
 jobs:
 - name: test
   plan:
-  - get: sources
+  - get: test
     trigger: true
  # - task: install
  #   file: sources/pipeline/install.yml
   - task: test
-    file: sources/pipeline/test.yml
+    file: test/pipeline/test.yml
